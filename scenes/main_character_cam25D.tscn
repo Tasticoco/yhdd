@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://tdjp5x4yin31"]
+
+[ext_resource type="Script" uid="uid://cdnx3nuih20lp" path="res://scripts/main_character_cam_25d.gd" id="1_b5lqj"]
+[ext_resource type="Texture2D" uid="uid://6yltjm0620tn" path="res://assets/spritepaint.png" id="2_hw21p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fff2"]
+size = Vector3(0.4, 0.47975463, 0.35302734)
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=969811880]
+transform = Transform3D(1, 0, 0, 0, 0.93524647, -0.35399723, 0, 0.35399723, 0.93524647, 0, 0, 0)
+script = ExtResource("1_b5lqj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1185543958]
+transform = Transform3D(1, 0, 0, 0, 0.9364642, 0.3507631, 0, -0.3507631, 0.9364642, 0, 0.26043704, -0.013092175)
+shape = SubResource("BoxShape3D_6fff2")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1092178323]
+transform = Transform3D(1, 0, 0, 0, 0.95454264, -0.29807472, 0, 0.29807472, 0.95454264, 0, 0.32658502, 0.0018395707)
+texture_filter = 0
+texture = ExtResource("2_hw21p")
+
+[node name="Camera3D" type="Camera3D" parent="Sprite3D" unique_id=1318785639]
+transform = Transform3D(-0.99932265, -0.01262214, -0.03456825, -0.016405383, 0.9936352, 0.11144513, 0.032941535, 0.111937374, -0.99316907, 0, 0.7141677, -2.3478496)
+fov = 71.42257
