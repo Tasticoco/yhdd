@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b4h338uxh0kdk"
-valid=false
+path="res://.godot/imported/rue.blend-599eb9f5039a8b36e596c9d702534b2a.scn"
 
 [deps]
 
-source_file="res://assets/rue.blend"
+source_file="res://assets/models/rue.blend"
+dest_files=["res://.godot/imported/rue.blend-599eb9f5039a8b36e596c9d702534b2a.scn"]
 
 [params]
 
@@ -36,7 +37,16 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Camera": {
+"import/skip_import": true
+},
+"PATH:Light": {
+"import/skip_import": true
+}
+}
+}
 blender/nodes/visible=0
 blender/nodes/active_collection_only=false
 blender/nodes/punctual_lights=true

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://tdjp5x4yin31"]
+
+[ext_resource type="Script" uid="uid://cdnx3nuih20lp" path="res://scripts/main_character_cam_25d.gd" id="1_b5lqj"]
+[ext_resource type="Texture2D" uid="uid://cet7c1ujxovjn" path="res://assets/Sprites_320x320_72dpi/sprite_yollande.png" id="2_b5lqj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fff2"]
+size = Vector3(2.6000001, 2.4, 1.9)
+
+[node name="Yollande" type="CharacterBody3D" unique_id=969811880]
+script = ExtResource("1_b5lqj")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1092178323]
+transform = Transform3D(1, 0, 0, 0, 0.7660445, -0.6427877, 0, 0.6427877, 0.7660445, 0, 1.1935365, -0.32630756)
+texture_filter = 0
+texture = ExtResource("2_b5lqj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1185543958]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 1.1412679, -0.33978713)
+shape = SubResource("BoxShape3D_6fff2")

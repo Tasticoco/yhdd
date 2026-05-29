@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6yltjm0620tn"
-path.s3tc="res://.godot/imported/spritepaint.png-b1018be625a0a2c79f8a65b0d5bc9928.s3tc.ctex"
+path.s3tc="res://.godot/imported/yn.png-236c743b713fdf5acbdbabce252ae88e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/spritepaint.png"
-dest_files=["res://.godot/imported/spritepaint.png-b1018be625a0a2c79f8a65b0d5bc9928.s3tc.ctex"]
+source_file="res://assets/placeholders/yn.png"
+dest_files=["res://.godot/imported/yn.png-236c743b713fdf5acbdbabce252ae88e.s3tc.ctex"]
 
 [params]
 

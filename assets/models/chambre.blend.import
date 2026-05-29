@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://8g0mesr1rscm"
-valid=false
+path="res://.godot/imported/chambre.blend-69a99db52b9309e0f5d59c90570b0b0d.scn"
 
 [deps]
 
-source_file="res://assets/chambre.blend"
+source_file="res://assets/models/chambre.blend"
+dest_files=["res://.godot/imported/chambre.blend-69a99db52b9309e0f5d59c90570b0b0d.scn"]
 
 [params]
 
@@ -36,7 +37,28 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Camera": {
+"import/skip_import": true
+},
+"PATH:Empty": {
+"import/skip_import": true
+},
+"PATH:Light": {
+"import/skip_import": true
+},
+"PATH:baldaque": {
+"import/skip_import": true
+},
+"PATH:bonom": {
+"import/skip_import": true
+},
+"PATH:bonom_001": {
+"import/skip_import": true
+}
+}
+}
 blender/nodes/visible=0
 blender/nodes/active_collection_only=false
 blender/nodes/punctual_lights=true

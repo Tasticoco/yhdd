@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://csawhtm0hvyxc"]
+
+[ext_resource type="PackedScene" uid="uid://8g0mesr1rscm" path="res://assets/models/chambre.blend" id="1_h46dr"]
+[ext_resource type="PackedScene" uid="uid://tdjp5x4yin31" path="res://scenes/Yollande.tscn" id="2_mhgip"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mhgip"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_urqid"]
+sky_material = SubResource("ProceduralSkyMaterial_mhgip")
+
+[sub_resource type="Environment" id="Environment_ssrvi"]
+background_mode = 2
+sky = SubResource("Sky_urqid")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_mhgip"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ssrvi"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_3s05t"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_urqid"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h46dr"]
+size = Vector3(3.9, 8.400001, 7.9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b8byc"]
+size = Vector3(2.6000001, 8.400001, 2.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mhgip"]
+size = Vector3(2.2, 7.3, 11.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_urqid"]
+size = Vector3(0.2, 9.1, 4.9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ssrvi"]
+size = Vector3(6, 9.3, 2.4)
+
+[node name="chambre" type="Node3D" unique_id=1822555792]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=823338479]
+transform = Transform3D(-0.85264015, 0.5224986, 2.283914e-08, 0, -4.371139e-08, 1, 0.5224986, 0.85264015, 3.7270084e-08, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1669891115]
+environment = SubResource("Environment_ssrvi")
+
+[node name="chambre" parent="." unique_id=544994015 instance=ExtResource("1_h46dr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0034817457, 0, -0.025873184)
+
+[node name="Camera" type="Camera3D" parent="." unique_id=1769586232]
+transform = Transform3D(0.64278764, -0.38302222, 0.66341394, 0, 0.8660254, 0.5, -0.76604444, -0.32139382, 0.5566704, 20, 20.5, 18)
+projection = 1
+size = 21.495543
+near = 0.1
+far = 100.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1954459105]
+visible = false
+
+[node name="floor_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=548974441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0, 4.0084124e-06)
+shape = SubResource("WorldBoundaryShape3D_mhgip")
+
+[node name="wall_l_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=764997227]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, -6.5, 0, 0.20000362)
+shape = SubResource("WorldBoundaryShape3D_ssrvi")
+
+[node name="wall_r_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=619663758]
+transform = Transform3D(1.1924881e-08, -1, 4.371139e-08, 0, -4.371139e-08, -1, 1, 1.1924881e-08, -5.2125306e-16, 6.3, 0, 0.20000362)
+shape = SubResource("WorldBoundaryShape3D_3s05t")
+
+[node name="wall_b_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=767577912]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -8.599997)
+shape = SubResource("WorldBoundaryShape3D_urqid")
+
+[node name="baldaque_chest_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=706711341]
+transform = Transform3D(1.0714585, 0, 0, 0, 1.0714585, 0, 0, 0, 1.0714585, 4.1577954, 4.5477896, -4.347912)
+shape = SubResource("BoxShape3D_h46dr")
+
+[node name="bars_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=1493924235]
+transform = Transform3D(1.0714585, 0, 0, 0, 1.0714585, 0, 0, 0, 1.0714585, 4.8542433, 4.5477896, 1.1662542)
+shape = SubResource("BoxShape3D_b8byc")
+
+[node name="furniture_col" type="CollisionShape3D" parent="StaticBody3D" unique_id=1412297017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 3.65, 1.6500006)
+shape = SubResource("BoxShape3D_mhgip")
+
+[node name="furniture_col2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1774278092]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.8000002, 4.55, 7.55)
+shape = SubResource("BoxShape3D_urqid")
+
+[node name="Yollande" parent="." unique_id=969811880 node_paths=PackedStringArray("cam") instance=ExtResource("2_mhgip")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.50000024, 1.4000002, 3.9000003)
+cam = NodePath("../Camera")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=594766013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12.16519)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1362868997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, 4.15, -3.7000008)
+shape = SubResource("BoxShape3D_ssrvi")
