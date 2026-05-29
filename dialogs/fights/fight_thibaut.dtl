@@ -1,0 +1,28 @@
+set {stress} = 0
+join Yollande left [animation="Slide From Left"]
+join Thibaut right [animation="Slide From Right"]
+label retry
+if {stress} == 0.0:
+	Thibaut: njour… Hein ? Ouais je sais pas trop… J’ai oublié je crois. Jui juste en stage moi.
+elif {stress} == 1.0:
+	Thibaut: Je peux appeler la responsable sinon parce que là j’ai un peu la flemme. Je crois il faut le numéro AVS ou un truc du genre… Tu veux pas on fait une sieste ?
+elif {stress} == 2.0:
+	Thibaut: RrrrrZZZZZ… Huh ? J’crois j’peux bientôt faire une pause chiottes pour me réveiller la dernière c’était y’a plus de 10 minutes.
+elif {stress} == 3.0:
+	Thibaut: T’es encore là ? Nan je sais pas c’est quoi AVS pfff… Attention… Volant… heuuu… Assurance… Vice Versa ? Ouais ça doit être ça. Enfin c’est des chiffres quoi.
+elif {stress} == 4.0:
+	Thibaut: Franchement j’m’en carre le cul, donne moi des chiffres au hasard…
+else:
+	Thibaut: Bon écoute j’comprends rien j’en ai marre j’appelle la respo. (...) Elle dit qu’elle est pas là et de lui dire quand la folle en armure est partie du coup je peux pas vous aider.
+	[end_timeline]
+- Esquive
+	set {stress} += 1.0
+	jump retry
+- Action
+	Thibaut: Ça dit quoi ton truc là ? 16 ? Vasy on a qu’à dire que c’est ça le truc AVS ça joue ? Ça joue.
+	[end_timeline]
+- Potion
+	set {stress} += 1.0
+	jump retry
+- Oracle
+	Thibaut: Allo madame ? Oui il me faut le numéro AVS c’est tout ce qui reste. Comment ? Vous le connaissez par coeur ? Waw ! Et bien je note…

@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Thibaut",
+&"description": "Thibaut est un adolescent en apprentissage dans le bureau des affaires fiscales de la ville. Il n'en a rien à foutre de tout et quand une situation lui paraît un tantinet chiante, il appelle Monique sa responsable pour résoudre le problème. Par ailleurs, si il peut vite finir son shift en bâclant son travail au passage, il est partant. C’est le seul personnage qui ne remarque même pas l’armure de Yollande, il est juste saoulé que la situation prenne du temps à se résoudre.",
+&"display_name": "Thibaut",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Thibaut": {
+"export_overrides": {
+"image": "\"res://assets/Sprites_32x32_72dpi/portrait_thibaut.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

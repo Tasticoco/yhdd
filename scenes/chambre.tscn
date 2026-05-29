@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://8g0mesr1rscm" path="res://assets/models/chambre.blend" id="1_h46dr"]
 [ext_resource type="PackedScene" uid="uid://tdjp5x4yin31" path="res://scenes/Yollande.tscn" id="2_mhgip"]
+[ext_resource type="PackedScene" uid="uid://bksjtjke5xlxp" path="res://scenes/area_3d_change_scene.tscn" id="3_urqid"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mhgip"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -97,9 +98,9 @@ shape = SubResource("BoxShape3D_urqid")
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.50000024, 1.4000002, 3.9000003)
 cam = NodePath("../Camera")
 
-[node name="Area3D" type="Area3D" parent="." unique_id=594766013]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12.16519)
+[node name="Area3D_change_scene" parent="." unique_id=1832765252 instance=ExtResource("3_urqid")]
+next_scene = "uid://bikoyn6fmy2rt"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1362868997]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, 4.15, -3.7000008)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D_change_scene" unique_id=1362868997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, 4.15, 8.465189)
 shape = SubResource("BoxShape3D_ssrvi")

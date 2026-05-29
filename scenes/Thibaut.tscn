@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://ddfvmolcqbr2l"]
+
+[ext_resource type="Texture2D" uid="uid://bimejrxwkl8cd" path="res://assets/Sprites_320x320_72dpi/sprite_thibaut.png" id="1_egq47"]
+[ext_resource type="Script" uid="uid://b2as4d4h5w4pi" path="res://scripts/Thibaut.gd" id="1_endyx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_endyx"]
+size = Vector3(2.465088, 2.718872, 1.5400391)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jktoh"]
+size = Vector3(2.9919434, 2.718872, 2.1311035)
+
+[node name="Thibaut" type="StaticBody3D" unique_id=609057900]
+script = ExtResource("1_endyx")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=776370635]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 1.3420582, 0)
+texture = ExtResource("1_egq47")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2122726777]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3766084, 0)
+shape = SubResource("BoxShape3D_endyx")
+
+[node name="chat_area" type="Area3D" parent="." unique_id=42987685]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chat_area" unique_id=63180349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3766084, 0)
+shape = SubResource("BoxShape3D_jktoh")
+
+[connection signal="body_entered" from="chat_area" to="." method="_on_chat_area_body_entered"]
+[connection signal="body_exited" from="chat_area" to="." method="_on_chat_area_body_exited"]

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d23o1w65v7g2d"]
+
+[ext_resource type="Script" uid="uid://bavygy5g4dfo5" path="res://scripts/stress.gd" id="1_pgwmt"]
+
+[node name="stress" type="HBoxContainer" unique_id=819334632]
+custom_minimum_size = Vector2(100, 20)
+offset_right = 62.0
+offset_bottom = 52.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_pgwmt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1198131323]
+visible = false
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+color = Color(0.21960784, 1, 0.2509804, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1439596248]
+visible = false
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+color = Color(1, 1, 0.1764706, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1287794096]
+visible = false
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+color = Color(1, 0.47058824, 0.14117648, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=857307444]
+visible = false
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+color = Color(1, 0, 0.1254902, 1)
