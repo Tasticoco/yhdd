@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbr8rx6n70i3n"
-path="res://.godot/imported/next.svg-e9ecf9d6906ac97cdc1e886c5acf32a4.ctex"
+uid="uid://bli75g1gc0cmi"
+path="res://.godot/imported/interface_only_action_passer.png-aeaebdc72ae127e99154227029820f20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dialogs/VisualNovelTextbox/next.svg"
-dest_files=["res://.godot/imported/next.svg-e9ecf9d6906ac97cdc1e886c5acf32a4.ctex"]
+source_file="res://assets/interface_only_action_passer.png"
+dest_files=["res://.godot/imported/interface_only_action_passer.png-aeaebdc72ae127e99154227029820f20.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

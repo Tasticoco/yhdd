@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "yhdd_style_dialogs",
+"suffix": ""
+},
+&"default_portrait": "pixel_Francois",
+&"description": "François est un cinquantenaire grognon versé dans le survivalisme et le complotisme. Il est chasseur dans son temps libre et crois que les vaisseaux de la vierge Marie viendront le chercher pour l'emmener chez les Elohimes avec les autres fidèles. Il a travaillé 10 ans de ses 25 ans à ses 35 dans la vente dans une quincaillerie, mais il a vite abandonné cette glorieuse carrière quand il a hérité des deux maisons de ses parents et qu’il y a vu l’occasion de devenir propriétaire professionnel et de vivre de la location de ces logements à peine rénovés. Il considère Yollande comme une dérive wokiste par sa simple existence, mais sa grand-mère lui a un jour sauvé la vie alors qu’il s’était coincé le pied dans son propre piège à loup dans lequel il était resté coincé trois jours. Depuis il est persuadé que cette dernière est une enfant indigo qui s’ignore et il l’a respecte énormément.",
+&"display_name": "Francois",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"pixel_Francois": {
+"export_overrides": {
+"image": "\"res://assets/Sprites_320x320_72dpi/sprite_francois.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://8g0mesr1rscm" path="res://assets/models/chambre.blend" id="1_h46dr"]
 [ext_resource type="PackedScene" uid="uid://tdjp5x4yin31" path="res://scenes/Yollande.tscn" id="2_mhgip"]
 [ext_resource type="PackedScene" uid="uid://bksjtjke5xlxp" path="res://scenes/area_3d_change_scene.tscn" id="3_urqid"]
+[ext_resource type="PackedScene" uid="uid://bmk44i2vouvif" path="res://scenes/game_manager.tscn" id="4_ssrvi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mhgip"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -104,3 +105,5 @@ next_scene = "uid://bikoyn6fmy2rt"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D_change_scene" unique_id=1362868997]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, 4.15, 8.465189)
 shape = SubResource("BoxShape3D_ssrvi")
+
+[node name="game_manager" parent="." unique_id=1043935005 instance=ExtResource("4_ssrvi")]

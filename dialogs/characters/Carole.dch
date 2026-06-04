@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "yhdd_style_dialogs",
+"suffix": ""
+},
+&"default_portrait": "pixel_Carole",
+&"description": "Carole est une femme américaine quarantenaire lesbienne célibataire. C’est une écrivaine qui vit grâce à un de ses best seller qu’elle a publié quand elle était ado. Adapté en une trilogie de film puis vendu à Netlfix. Depuis elle a essayé sans relâche de se détacher de son image d’écrivaine de romance pour ado mais n’a plus aucun succès. Finalement elle a retrouvé un crush qu’elle a eu lors de sa trentaine et a emménagé dans ce quartier en suisse afin d’être tranquille et de ne manquer de rien et potentiellement retrouvé la flamme amoureuse. Loin de la ville, loin de New York loin des critiques littéraires, proche de sa crush. Elle dit qu’elle n’écrit plus mais le soir avec un verre de whisky et son calepin elle cherche un potentiel eureka pour un prochain livre. Sa crush travaille à la mairie et Carole a trouvé un petit job d’employé de commerce pour tenter de se rapprocher d’elle. (Elle ne lui a pas encore vraiment parlé).",
+&"display_name": "Carole",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"pixel_Carole": {
+"export_overrides": {
+"image": "\"res://assets/Sprites_320x320_72dpi/sprite_carole.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

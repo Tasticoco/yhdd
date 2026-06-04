@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "yhdd_style_dialogs",
+"suffix": ""
+},
+&"default_portrait": "pixel_Olivia",
+&"description": "Emo-goth, elle dit qu’elle est apolitique (elle est de droite). Energy drink girl frange grosse lunettes, est en couple avec un mec qui s’appelle Lucas. Elle trouve que Yollande est hyper cringe. Passe beaucoup de temps sur youtube.",
+&"display_name": "Olivia",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"pixel_Olivia": {
+"export_overrides": {
+"image": "\"res://assets/Sprites_320x320_72dpi/sprite_olivia.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

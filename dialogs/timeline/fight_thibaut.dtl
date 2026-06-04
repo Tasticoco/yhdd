@@ -1,6 +1,5 @@
-set {stress} = 0
-join Yollande left [animation="Slide From Left"]
-join Thibaut right [animation="Slide From Right"]
+join Yollande leftmost [animation="Slide From Left"]
+join Thibaut rightmost [animation="Slide From Right"]
 label retry
 if {stress} == 0.0:
 	Thibaut: njour… Hein ? Ouais je sais pas trop… J’ai oublié je crois. Jui juste en stage moi.
@@ -18,11 +17,14 @@ else:
 - Esquive
 	set {stress} += 1.0
 	jump retry
-- Action
+- Action | [if {phase} >= 1.0] [else="hide"]
 	Thibaut: Ça dit quoi ton truc là ? 16 ? Vasy on a qu’à dire que c’est ça le truc AVS ça joue ? Ça joue.
+	set {stress} = 0
 	[end_timeline]
-- Potion
+- Potion | [if {phase} >= 2.0] [else="hide"]
 	set {stress} += 1.0
 	jump retry
-- Oracle
+- Oracle | [if {phase} >= 3.0] [else="hide"]
 	Thibaut: Allo madame ? Oui il me faut le numéro AVS c’est tout ce qui reste. Comment ? Vous le connaissez par coeur ? Waw ! Et bien je note…
+	set {stress} = 0
+	[end_timeline]

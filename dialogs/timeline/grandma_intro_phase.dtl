@@ -1,0 +1,11 @@
+join Grandma center [animation="Slide In Up"]
+if {phase} == 0.0 :
+	Grandma: Yollande. Yollande ! YOLLANDEEEEEEE !!! Hum mon cœur réveille toi… Écoute je sais que c’est difficile de trouver un job après 2 master en histoire médiévale. Mais tu ne peux pas rester chez nous indéfiniment. C’est pas que tu déranges, non, mais… Voilà ton grand-père et moi nous aimerions bien que tu voles de tes propres ailes ! Aller jour par jour tu peux t’en sortir ! Essaye de t’occuper un peu de ta vie d’adulte.
+elif {phase}    ==    1.0:
+	Grandma: Bravo ma biquette, c’est une belle énergie que tu as là. Tu devrais essayer de voir ça comme un de tes jeux là ! Tiens prends tes dés, c’est toujours plus agréable d’avoir un objet qui nous est cher près de soi pour se donner du courage.
+elif {phase}  ==  2.0:
+	Grandma: Et bien ma grande tu t’es donnée bravo ! Tes dés t’ont donné du courage ? Tiens je t’ai fait de la tisane du bonheur, ça déstresse,  ça tonifie et ça clarifie la voix ! Aller zou dehors t’as pas fini et courage ! Moi j’ai
+elif {phase}  ==  3.0 :
+	Grandma: Bravo ma petite fleur ! Bon ça y est maintenant. Prends ce téléphone et tu m’appelles si on t’embête. Pas trop par contre je dois déjà m’occuper de ce bon à rien de grand père, faut le faire bosser celui là.
+elif {phase} > 3.0:
+	Grandma: Oups ! Qu'est ce que tu fais dans cette phase ? Elle ne devrait même pas exister ! Voyons ma grande... où t'es tu encore fourrée ?

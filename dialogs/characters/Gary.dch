@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "yhdd_style_dialogs",
+"suffix": ""
+},
+&"default_portrait": "pixel_Gary",
+&"description": "",
+&"display_name": "Gary",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"pixel_Gary": {
+"export_overrides": {
+"image": "\"res://assets/Sprites_320x320_72dpi/sprite_garry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

@@ -22,17 +22,31 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"Alfred": "res://dialogs/characters/Alfred.dch",
+"Carole": "res://dialogs/characters/Carole.dch",
+"Francois": "res://dialogs/characters/Francois.dch",
+"Gary": "res://dialogs/characters/Gary.dch",
+"Grandma": "res://dialogs/characters/Grandma.dch",
+"Laurence": "res://dialogs/characters/Laurence.dch",
+"Olivia": "res://dialogs/characters/Olivia.dch",
 "Thibaut": "res://dialogs/characters/Thibaut.dch",
 "Yollande": "res://dialogs/characters/Yollande.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"fight_thibaut": "res://dialogs/fights/fight_thibaut.dtl"
+"fight_thibaut": "res://dialogs/timeline/fight_thibaut.dtl",
+"grandma_intro_phase": "res://dialogs/timeline/grandma_intro_phase.dtl"
 }
-layout/style_directory={}
-layout/style_list=[""]
-layout/default_style=""
+layout/style_directory={
+"": "res://dialogs/yhdd_style_dialogs.tres",
+"yhdd_style_dialogs": "res://dialogs/yhdd_style_dialogs.tres"
+}
+layout/style_list=["res://dialogs/yhdd_style_dialogs.tres"]
+layout/default_style="res://dialogs/yhdd_style_dialogs.tres"
 variables={
+"NewFolder": {},
+"new_phase": true,
+"phase": 0,
 "stress": 0
 }
 extensions_folder="res://addons/dialogic_additions"

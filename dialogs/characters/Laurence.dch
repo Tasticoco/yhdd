@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "yhdd_style_dialogs",
+"suffix": ""
+},
+&"default_portrait": "pixel_Laurence",
+&"description": "Long cheveux lisse, sourire attendrissant, très grande et imposante, chuchote. La bibliothèque est un safe space pour Laurence. Elle déteste son chez soi qui est pollué par sa famille aka ses 3 petits garçons et son mari coach de Tai chi. à son travail elle est la reine, avec sa grande taille et son calme elle surplombe tous ses collègues par une oppression tranquille. Ara ara vibe mais francophone. Elle est très gentille avec ses clients mais tranchante avec les problèmes (comme avec YH). Garder son calme est très important pour elle, c’est son nindo. Elle a des mixed feeling pour Yollande. Yollande est calme c’est un très bon point mais elle n’a pas rendu le livre grimoire médiéval du château de Grandson, une relique pour la bibliothèque.",
+&"display_name": "Laurence",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"pixel_Laurence": {
+"export_overrides": {
+"image": "\"res://assets/Sprites_320x320_72dpi/sprite_laurence.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}
